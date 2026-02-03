@@ -1,0 +1,125 @@
+2026-01-30 00:48:08.717 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5084/api/user/all - null null
+2026-01-30 00:48:09.056 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-01-30 00:48:09.108 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-01-30 00:48:09.111 +05:30 [INF] HTTP GET /api/user/all responded 401 in 135.1381 ms
+2026-01-30 00:48:09.124 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5084/api/user/all - 401 0 null 425.1239ms
+2026-01-30 00:48:13.664 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5084/api/auth/admin/login - application/json 146
+2026-01-30 00:48:13.710 +05:30 [INF] Executing endpoint 'LibraryManagementSystem.Controllers.AuthController.AdminLogin (LibraryManagementSystem)'
+2026-01-30 00:48:13.748 +05:30 [INF] Route matched with {action = "AdminLogin", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AdminLogin(LibraryManagementSystem.Controllers.LoginRequest) on controller LibraryManagementSystem.Controllers.AuthController (LibraryManagementSystem).
+2026-01-30 00:48:13.990 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-01-30 00:48:14.004 +05:30 [INF] Executed action LibraryManagementSystem.Controllers.AuthController.AdminLogin (LibraryManagementSystem) in 239.9217ms
+2026-01-30 00:48:14.007 +05:30 [INF] Executed endpoint 'LibraryManagementSystem.Controllers.AuthController.AdminLogin (LibraryManagementSystem)'
+2026-01-30 00:48:14.021 +05:30 [INF] HTTP POST /api/auth/admin/login responded 400 in 330.1577 ms
+2026-01-30 00:48:14.027 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5084/api/auth/admin/login - 400 null application/problem+json; charset=utf-8 362.244ms
+2026-01-30 00:48:17.074 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5084/api/user/all - null null
+2026-01-30 00:48:17.084 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-01-30 00:48:17.086 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-01-30 00:48:17.088 +05:30 [INF] HTTP GET /api/user/all responded 401 in 6.6264 ms
+2026-01-30 00:48:17.092 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5084/api/user/all - 401 0 null 18.5411ms
+2026-01-30 00:49:07.083 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5084/api/auth/admin/login - application/json 59
+2026-01-30 00:49:07.090 +05:30 [INF] Executing endpoint 'LibraryManagementSystem.Controllers.AuthController.AdminLogin (LibraryManagementSystem)'
+2026-01-30 00:49:07.093 +05:30 [INF] Route matched with {action = "AdminLogin", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AdminLogin(LibraryManagementSystem.Controllers.LoginRequest) on controller LibraryManagementSystem.Controllers.AuthController (LibraryManagementSystem).
+2026-01-30 00:49:07.188 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-30 00:49:07.194 +05:30 [INF] Executed action LibraryManagementSystem.Controllers.AuthController.AdminLogin (LibraryManagementSystem) in 95.4967ms
+2026-01-30 00:49:07.197 +05:30 [INF] Executed endpoint 'LibraryManagementSystem.Controllers.AuthController.AdminLogin (LibraryManagementSystem)'
+2026-01-30 00:49:07.200 +05:30 [INF] HTTP POST /api/auth/admin/login responded 200 in 110.8847 ms
+2026-01-30 00:49:07.203 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5084/api/auth/admin/login - 200 null application/json; charset=utf-8 119.774ms
+2026-01-30 00:49:10.620 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5084/api/user/all - null null
+2026-01-30 00:49:10.814 +05:30 [INF] Executing endpoint 'LibraryManagementSystem.Controllers.UserController.GetAllUsers (LibraryManagementSystem)'
+2026-01-30 00:49:10.951 +05:30 [INF] Route matched with {action = "GetAllUsers", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllUsers() on controller LibraryManagementSystem.Controllers.UserController (LibraryManagementSystem).
+2026-01-30 00:49:11.965 +05:30 [INF] Executed DbCommand (95ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserID], [u].[ContactNumber], [u].[Department], [u].[IsBlocked], [u].[IsDeleted], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit)
+2026-01-30 00:49:11.989 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LibraryManagementSystem.Models.User, LibraryManagementSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-30 00:49:12.001 +05:30 [INF] Executed action LibraryManagementSystem.Controllers.UserController.GetAllUsers (LibraryManagementSystem) in 1043.6322ms
+2026-01-30 00:49:12.003 +05:30 [INF] Executed endpoint 'LibraryManagementSystem.Controllers.UserController.GetAllUsers (LibraryManagementSystem)'
+2026-01-30 00:49:12.005 +05:30 [INF] HTTP GET /api/user/all responded 200 in 1268.2742 ms
+2026-01-30 00:49:12.016 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5084/api/user/all - 200 null application/json; charset=utf-8 1395.3543ms
+2026-01-30 00:50:40.963 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5084/api/user/me/1 - null null
+2026-01-30 00:50:40.975 +05:30 [INF] Executing endpoint 'LibraryManagementSystem.Controllers.UserController.GetMyProfile (LibraryManagementSystem)'
+2026-01-30 00:50:41.000 +05:30 [INF] Route matched with {action = "GetMyProfile", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyProfile(Int32) on controller LibraryManagementSystem.Controllers.UserController (LibraryManagementSystem).
+2026-01-30 00:50:41.118 +05:30 [INF] Executed DbCommand (33ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserID], [u].[ContactNumber], [u].[Department], [u].[IsBlocked], [u].[IsDeleted], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[UserID] = @id AND [u].[IsDeleted] = CAST(0 AS bit)
+2026-01-30 00:50:41.124 +05:30 [INF] Executing OkObjectResult, writing value of type 'LibraryManagementSystem.Models.User'.
+2026-01-30 00:50:41.128 +05:30 [INF] Executed action LibraryManagementSystem.Controllers.UserController.GetMyProfile (LibraryManagementSystem) in 124.5501ms
+2026-01-30 00:50:41.132 +05:30 [INF] Executed endpoint 'LibraryManagementSystem.Controllers.UserController.GetMyProfile (LibraryManagementSystem)'
+2026-01-30 00:50:41.134 +05:30 [INF] HTTP GET /api/user/me/1 responded 200 in 163.3042 ms
+2026-01-30 00:50:41.138 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5084/api/user/me/1 - 200 null application/json; charset=utf-8 174.4329ms
+2026-01-30 00:50:47.631 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5084/api/user/me/2 - null null
+2026-01-30 00:50:47.635 +05:30 [INF] Executing endpoint 'LibraryManagementSystem.Controllers.UserController.GetMyProfile (LibraryManagementSystem)'
+2026-01-30 00:50:47.637 +05:30 [INF] Route matched with {action = "GetMyProfile", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyProfile(Int32) on controller LibraryManagementSystem.Controllers.UserController (LibraryManagementSystem).
+2026-01-30 00:50:47.656 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserID], [u].[ContactNumber], [u].[Department], [u].[IsBlocked], [u].[IsDeleted], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[UserID] = @id AND [u].[IsDeleted] = CAST(0 AS bit)
+2026-01-30 00:50:47.668 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2026-01-30 00:50:47.684 +05:30 [INF] Executed action LibraryManagementSystem.Controllers.UserController.GetMyProfile (LibraryManagementSystem) in 43.306ms
+2026-01-30 00:50:47.687 +05:30 [INF] Executed endpoint 'LibraryManagementSystem.Controllers.UserController.GetMyProfile (LibraryManagementSystem)'
+2026-01-30 00:50:47.689 +05:30 [INF] HTTP GET /api/user/me/2 responded 404 in 54.8431 ms
+2026-01-30 00:50:47.698 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5084/api/user/me/2 - 404 null application/problem+json; charset=utf-8 67.5219ms
+2026-01-30 00:50:50.643 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5084/api/user/me/2 - null null
+2026-01-30 00:50:50.647 +05:30 [INF] Executing endpoint 'LibraryManagementSystem.Controllers.UserController.GetMyProfile (LibraryManagementSystem)'
+2026-01-30 00:50:50.649 +05:30 [INF] Route matched with {action = "GetMyProfile", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyProfile(Int32) on controller LibraryManagementSystem.Controllers.UserController (LibraryManagementSystem).
+2026-01-30 00:50:50.663 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserID], [u].[ContactNumber], [u].[Department], [u].[IsBlocked], [u].[IsDeleted], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[UserID] = @id AND [u].[IsDeleted] = CAST(0 AS bit)
+2026-01-30 00:50:50.668 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2026-01-30 00:50:50.671 +05:30 [INF] Executed action LibraryManagementSystem.Controllers.UserController.GetMyProfile (LibraryManagementSystem) in 17.1694ms
+2026-01-30 00:50:50.678 +05:30 [INF] Executed endpoint 'LibraryManagementSystem.Controllers.UserController.GetMyProfile (LibraryManagementSystem)'
+2026-01-30 00:50:50.682 +05:30 [INF] HTTP GET /api/user/me/2 responded 404 in 35.0109 ms
+2026-01-30 00:50:50.690 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5084/api/user/me/2 - 404 null application/problem+json; charset=utf-8 46.3422ms
+2026-01-30 00:50:57.113 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5084/api/user/me/3 - null null
+2026-01-30 00:50:57.117 +05:30 [INF] Executing endpoint 'LibraryManagementSystem.Controllers.UserController.GetMyProfile (LibraryManagementSystem)'
+2026-01-30 00:50:57.119 +05:30 [INF] Route matched with {action = "GetMyProfile", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyProfile(Int32) on controller LibraryManagementSystem.Controllers.UserController (LibraryManagementSystem).
+2026-01-30 00:50:57.132 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserID], [u].[ContactNumber], [u].[Department], [u].[IsBlocked], [u].[IsDeleted], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[UserID] = @id AND [u].[IsDeleted] = CAST(0 AS bit)
+2026-01-30 00:50:57.137 +05:30 [INF] Executing OkObjectResult, writing value of type 'LibraryManagementSystem.Models.User'.
+2026-01-30 00:50:57.139 +05:30 [INF] Executed action LibraryManagementSystem.Controllers.UserController.GetMyProfile (LibraryManagementSystem) in 17.6534ms
+2026-01-30 00:50:57.151 +05:30 [INF] Executed endpoint 'LibraryManagementSystem.Controllers.UserController.GetMyProfile (LibraryManagementSystem)'
+2026-01-30 00:50:57.154 +05:30 [INF] HTTP GET /api/user/me/3 responded 200 in 37.7882 ms
+2026-01-30 00:50:57.168 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5084/api/user/me/3 - 200 null application/json; charset=utf-8 55.3982ms
+2026-01-30 00:52:00.837 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5084/api/user/me/1 - null null
+2026-01-30 00:52:00.841 +05:30 [INF] Executing endpoint 'LibraryManagementSystem.Controllers.UserController.GetMyProfile (LibraryManagementSystem)'
+2026-01-30 00:52:00.843 +05:30 [INF] Route matched with {action = "GetMyProfile", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyProfile(Int32) on controller LibraryManagementSystem.Controllers.UserController (LibraryManagementSystem).
+2026-01-30 00:52:00.877 +05:30 [INF] Executed DbCommand (20ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserID], [u].[ContactNumber], [u].[Department], [u].[IsBlocked], [u].[IsDeleted], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[UserID] = @id AND [u].[IsDeleted] = CAST(0 AS bit)
+2026-01-30 00:52:00.888 +05:30 [INF] Executing OkObjectResult, writing value of type 'LibraryManagementSystem.Models.User'.
+2026-01-30 00:52:00.891 +05:30 [INF] Executed action LibraryManagementSystem.Controllers.UserController.GetMyProfile (LibraryManagementSystem) in 36.2057ms
+2026-01-30 00:52:00.909 +05:30 [INF] Executed endpoint 'LibraryManagementSystem.Controllers.UserController.GetMyProfile (LibraryManagementSystem)'
+2026-01-30 00:52:00.918 +05:30 [INF] HTTP GET /api/user/me/1 responded 200 in 76.7711 ms
+2026-01-30 00:52:00.925 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5084/api/user/me/1 - 200 null application/json; charset=utf-8 88.4999ms
+2026-01-30 00:52:18.969 +05:30 [INF] Request starting HTTP/1.1 PATCH http://localhost:5084/api/user/update/admin/1 - application/json 50
+2026-01-30 00:52:18.975 +05:30 [INF] Executing endpoint 'LibraryManagementSystem.Controllers.UserController.UpdateUserByAdmin (LibraryManagementSystem)'
+2026-01-30 00:52:18.991 +05:30 [INF] Route matched with {action = "UpdateUserByAdmin", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateUserByAdmin(Int32, LibraryManagementSystem.Models.User) on controller LibraryManagementSystem.Controllers.UserController (LibraryManagementSystem).
+2026-01-30 00:52:19.004 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-01-30 00:52:19.007 +05:30 [INF] Executed action LibraryManagementSystem.Controllers.UserController.UpdateUserByAdmin (LibraryManagementSystem) in 10.558ms
+2026-01-30 00:52:19.009 +05:30 [INF] Executed endpoint 'LibraryManagementSystem.Controllers.UserController.UpdateUserByAdmin (LibraryManagementSystem)'
+2026-01-30 00:52:19.014 +05:30 [INF] HTTP PATCH /api/user/update/admin/1 responded 400 in 39.1599 ms
+2026-01-30 00:52:19.018 +05:30 [INF] Request finished HTTP/1.1 PATCH http://localhost:5084/api/user/update/admin/1 - 400 null application/problem+json; charset=utf-8 48.5627ms
+2026-01-30 00:53:26.747 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5084/api/user/update/admin/1 - application/json 50
+2026-01-30 00:53:26.754 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-01-30 00:53:26.758 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-01-30 00:53:26.760 +05:30 [INF] HTTP PUT /api/user/update/admin/1 responded 405 in 6.7439 ms
+2026-01-30 00:53:26.805 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5084/api/user/update/admin/1 - 405 0 null 58.1228ms
+2026-01-30 00:55:36.025 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5084/api/auth/user/login - application/json 58
+2026-01-30 00:55:36.033 +05:30 [INF] Executing endpoint 'LibraryManagementSystem.Controllers.AuthController.UserLogin (LibraryManagementSystem)'
+2026-01-30 00:55:36.050 +05:30 [INF] Route matched with {action = "UserLogin", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserLogin(LibraryManagementSystem.Controllers.LoginRequest) on controller LibraryManagementSystem.Controllers.AuthController (LibraryManagementSystem).
+2026-01-30 00:55:36.303 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserID], [u].[ContactNumber], [u].[Department], [u].[IsBlocked], [u].[IsDeleted], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit)
+2026-01-30 00:55:36.317 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-30 00:55:36.320 +05:30 [INF] Executed action LibraryManagementSystem.Controllers.AuthController.UserLogin (LibraryManagementSystem) in 264.0322ms
+2026-01-30 00:55:36.322 +05:30 [INF] Executed endpoint 'LibraryManagementSystem.Controllers.AuthController.UserLogin (LibraryManagementSystem)'
+2026-01-30 00:55:36.324 +05:30 [INF] HTTP POST /api/auth/user/login responded 200 in 292.7862 ms
+2026-01-30 00:55:36.327 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5084/api/auth/user/login - 200 null application/json; charset=utf-8 302.265ms

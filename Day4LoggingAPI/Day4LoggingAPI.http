@@ -1,0 +1,6 @@
+@Day4LoggingAPI_HostAddress = http://localhost:5086
+
+GET {{Day4LoggingAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

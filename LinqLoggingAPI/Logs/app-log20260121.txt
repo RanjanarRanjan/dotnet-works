@@ -1,0 +1,100 @@
+2026-01-21 21:35:13.103 +05:30 [INF] Now listening on: http://localhost:5132
+2026-01-21 21:35:13.215 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-21 21:35:13.231 +05:30 [INF] Hosting environment: Development
+2026-01-21 21:35:13.259 +05:30 [INF] Content root path: C:\Users\user\Documents\dotnet\LinqLoggingAPI
+2026-01-21 21:35:25.770 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5132/ - null null
+2026-01-21 21:35:26.520 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-01-21 21:35:26.570 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5132/ - 404 0 null 806.0708ms
+2026-01-21 21:35:26.609 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5132/, Response status code: 404
+2026-01-21 21:35:26.986 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5132/ - null null
+2026-01-21 21:35:27.029 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5132/ - 404 0 null 43.6742ms
+2026-01-21 21:35:27.172 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5132/, Response status code: 404
+2026-01-21 21:35:36.018 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5132/api/students/all - null null
+2026-01-21 21:35:36.036 +05:30 [INF] Executing endpoint 'LinqLoggingAPI.Controllers.StudentsController.GetAll (LinqLoggingAPI)'
+2026-01-21 21:35:36.095 +05:30 [INF] Route matched with {action = "GetAll", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller LinqLoggingAPI.Controllers.StudentsController (LinqLoggingAPI).
+2026-01-21 21:35:36.126 +05:30 [INF] Fetching all students
+2026-01-21 21:35:36.159 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LinqLoggingAPI.Models.Student, LinqLoggingAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-21 21:35:36.242 +05:30 [INF] Executed action LinqLoggingAPI.Controllers.StudentsController.GetAll (LinqLoggingAPI) in 117.4972ms
+2026-01-21 21:35:36.246 +05:30 [INF] Executed endpoint 'LinqLoggingAPI.Controllers.StudentsController.GetAll (LinqLoggingAPI)'
+2026-01-21 21:35:36.255 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5132/api/students/all - 200 null application/json; charset=utf-8 236.2915ms
+2026-01-21 21:35:36.345 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5132/favicon.ico - null null
+2026-01-21 21:35:36.350 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5132/favicon.ico - 404 0 null 5.2077ms
+2026-01-21 21:35:36.355 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5132/favicon.ico, Response status code: 404
+2026-01-21 21:35:59.671 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5132/ - null null
+2026-01-21 21:35:59.704 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5132/ - 404 0 null 33.3099ms
+2026-01-21 21:36:00.080 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5132/, Response status code: 404
+2026-01-21 21:36:03.283 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5132/api/students/cse - null null
+2026-01-21 21:36:03.371 +05:30 [INF] Executing endpoint 'LinqLoggingAPI.Controllers.StudentsController.GetCseStudents (LinqLoggingAPI)'
+2026-01-21 21:36:03.389 +05:30 [INF] Route matched with {action = "GetCseStudents", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCseStudents() on controller LinqLoggingAPI.Controllers.StudentsController (LinqLoggingAPI).
+2026-01-21 21:36:03.407 +05:30 [INF] Fetching CSE students
+2026-01-21 21:36:03.414 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LinqLoggingAPI.Models.Student, LinqLoggingAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-21 21:36:03.423 +05:30 [INF] Executed action LinqLoggingAPI.Controllers.StudentsController.GetCseStudents (LinqLoggingAPI) in 16.3851ms
+2026-01-21 21:36:03.471 +05:30 [INF] Executed endpoint 'LinqLoggingAPI.Controllers.StudentsController.GetCseStudents (LinqLoggingAPI)'
+2026-01-21 21:36:03.494 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5132/api/students/cse - 200 null application/json; charset=utf-8 211.4465ms
+2026-01-21 21:36:09.181 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5132/ - null null
+2026-01-21 21:36:09.253 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5132/ - 404 0 null 71.9901ms
+2026-01-21 21:36:09.538 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5132/, Response status code: 404
+2026-01-21 21:36:24.658 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5132//api/students/orderby-marks - null null
+2026-01-21 21:36:24.664 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5132//api/students/orderby-marks - 404 0 null 6.5278ms
+2026-01-21 21:36:24.679 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5132//api/students/orderby-marks, Response status code: 404
+2026-01-21 21:36:34.006 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5132/api/students/orderby-marks - null null
+2026-01-21 21:36:34.011 +05:30 [INF] Executing endpoint 'LinqLoggingAPI.Controllers.StudentsController.OrderByMarks (LinqLoggingAPI)'
+2026-01-21 21:36:34.018 +05:30 [INF] Route matched with {action = "OrderByMarks", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult OrderByMarks() on controller LinqLoggingAPI.Controllers.StudentsController (LinqLoggingAPI).
+2026-01-21 21:36:34.027 +05:30 [INF] Ordering students by marks
+2026-01-21 21:36:34.030 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LinqLoggingAPI.Models.Student, LinqLoggingAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-21 21:36:34.043 +05:30 [INF] Executed action LinqLoggingAPI.Controllers.StudentsController.OrderByMarks (LinqLoggingAPI) in 17.1661ms
+2026-01-21 21:36:34.095 +05:30 [INF] Executed endpoint 'LinqLoggingAPI.Controllers.StudentsController.OrderByMarks (LinqLoggingAPI)'
+2026-01-21 21:36:34.098 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5132/api/students/orderby-marks - 200 null application/json; charset=utf-8 91.8457ms
+2026-01-21 21:37:01.979 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5132/swagger/v1/swagger.json - null null
+2026-01-21 21:37:02.158 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5132/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 179.6013ms
+2026-01-21 21:37:12.848 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5132/api/Students/all - null null
+2026-01-21 21:37:12.859 +05:30 [INF] Executing endpoint 'LinqLoggingAPI.Controllers.StudentsController.GetAll (LinqLoggingAPI)'
+2026-01-21 21:37:12.862 +05:30 [INF] Route matched with {action = "GetAll", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller LinqLoggingAPI.Controllers.StudentsController (LinqLoggingAPI).
+2026-01-21 21:37:12.868 +05:30 [INF] Fetching all students
+2026-01-21 21:37:12.871 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LinqLoggingAPI.Models.Student, LinqLoggingAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-21 21:37:12.873 +05:30 [INF] Executed action LinqLoggingAPI.Controllers.StudentsController.GetAll (LinqLoggingAPI) in 4.9602ms
+2026-01-21 21:37:12.876 +05:30 [INF] Executed endpoint 'LinqLoggingAPI.Controllers.StudentsController.GetAll (LinqLoggingAPI)'
+2026-01-21 21:37:12.883 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5132/api/Students/all - 200 null application/json; charset=utf-8 35.4005ms
+2026-01-21 21:37:44.693 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5132/api/Students/cse - null null
+2026-01-21 21:37:44.698 +05:30 [INF] Executing endpoint 'LinqLoggingAPI.Controllers.StudentsController.GetCseStudents (LinqLoggingAPI)'
+2026-01-21 21:37:44.700 +05:30 [INF] Route matched with {action = "GetCseStudents", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCseStudents() on controller LinqLoggingAPI.Controllers.StudentsController (LinqLoggingAPI).
+2026-01-21 21:37:44.705 +05:30 [INF] Fetching CSE students
+2026-01-21 21:37:44.706 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LinqLoggingAPI.Models.Student, LinqLoggingAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-21 21:37:44.713 +05:30 [INF] Executed action LinqLoggingAPI.Controllers.StudentsController.GetCseStudents (LinqLoggingAPI) in 7.9785ms
+2026-01-21 21:37:44.715 +05:30 [INF] Executed endpoint 'LinqLoggingAPI.Controllers.StudentsController.GetCseStudents (LinqLoggingAPI)'
+2026-01-21 21:37:44.717 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5132/api/Students/cse - 200 null application/json; charset=utf-8 24.2382ms
+2026-01-21 21:37:56.577 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5132/api/Students/names - null null
+2026-01-21 21:37:56.582 +05:30 [INF] Executing endpoint 'LinqLoggingAPI.Controllers.StudentsController.GetNames (LinqLoggingAPI)'
+2026-01-21 21:37:56.588 +05:30 [INF] Route matched with {action = "GetNames", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNames() on controller LinqLoggingAPI.Controllers.StudentsController (LinqLoggingAPI).
+2026-01-21 21:37:56.595 +05:30 [INF] Fetching student names
+2026-01-21 21:37:56.598 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-21 21:37:56.611 +05:30 [INF] Executed action LinqLoggingAPI.Controllers.StudentsController.GetNames (LinqLoggingAPI) in 15.9602ms
+2026-01-21 21:37:56.613 +05:30 [INF] Executed endpoint 'LinqLoggingAPI.Controllers.StudentsController.GetNames (LinqLoggingAPI)'
+2026-01-21 21:37:56.616 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5132/api/Students/names - 200 null application/json; charset=utf-8 38.6543ms
+2026-01-21 21:38:18.540 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5132/api/Students/error - null null
+2026-01-21 21:38:18.549 +05:30 [INF] Executing endpoint 'LinqLoggingAPI.Controllers.StudentsController.ThrowError (LinqLoggingAPI)'
+2026-01-21 21:38:18.552 +05:30 [INF] Route matched with {action = "ThrowError", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ThrowError() on controller LinqLoggingAPI.Controllers.StudentsController (LinqLoggingAPI).
+2026-01-21 21:38:18.562 +05:30 [INF] Executed action LinqLoggingAPI.Controllers.StudentsController.ThrowError (LinqLoggingAPI) in 3.7162ms
+2026-01-21 21:38:18.567 +05:30 [INF] Executed endpoint 'LinqLoggingAPI.Controllers.StudentsController.ThrowError (LinqLoggingAPI)'
+2026-01-21 21:38:18.570 +05:30 [ERR] Unhandled exception occurred
+System.Exception: Test exception
+   at LinqLoggingAPI.Controllers.StudentsController.ThrowError() in C:\Users\user\Documents\dotnet\LinqLoggingAPI\Controllers\StudentsController.cs:line 50
+   at lambda_method10(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at LinqLoggingAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\user\Documents\dotnet\LinqLoggingAPI\Middleware\ExceptionMiddleware.cs:line 19
+2026-01-21 21:38:18.880 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5132/api/Students/error - 500 null application/json; charset=utf-8 340.0118ms

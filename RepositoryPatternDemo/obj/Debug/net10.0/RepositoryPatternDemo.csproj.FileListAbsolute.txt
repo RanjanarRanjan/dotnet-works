@@ -1,0 +1,8 @@
+C:\Users\user\Documents\dotnet\RepositoryPatternDemo\obj\Debug\net10.0\RepositoryPatternDemo.csproj.AssemblyReference.cache
+C:\Users\user\Documents\dotnet\RepositoryPatternDemo\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\user\Documents\dotnet\RepositoryPatternDemo\obj\Debug\net10.0\RepositoryPatternDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\dotnet\RepositoryPatternDemo\obj\Debug\net10.0\RepositoryPatternDemo.AssemblyInfoInputs.cache
+C:\Users\user\Documents\dotnet\RepositoryPatternDemo\obj\Debug\net10.0\RepositoryPatternDemo.AssemblyInfo.cs
+C:\Users\user\Documents\dotnet\RepositoryPatternDemo\obj\Debug\net10.0\RepositoryPatternDemo.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\dotnet\RepositoryPatternDemo\obj\Debug\net10.0\RepositoryPatternDemo.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\user\Documents\dotnet\RepositoryPatternDemo\obj\Debug\net10.0\RepositoryPatternDemo.MvcApplicationPartsAssemblyInfo.cache
